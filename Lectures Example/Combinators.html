@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Combinators</title>
+    <style>
+    /* div .b{
+        background: lightblue;
+    } */
+
+    /* div > p{
+        background: lightpink;
+    } */
+
+    /* div ~ p{
+        background: lightsalmon;
+    } */
+    /* div ~ p{
+        background: lightseagreen;
+    } */
+
+    /* div p{
+      background-color: lightblue;
+    } */
+/* 
+    div ~ p{
+      background-color: lightpink;
+    } */
+
+    .a ~ p{
+      background-color: lightcoral;
+      /* font-size: 33px; */
+    }
+
+
+
+    </style>
+  </head>
+  <body>
+
+
+
+    <!-- Descendant Selector div p{} -->
+    <div class="a">
+      <p>Paragraph 1 in the div.</p>
+      <p class="b">Paragraph 2 in the div.</p>
+      <section><p  class="b">Paragraph 3 in the div.</p></section>
+      <section>
+        <section>
+          <section>
+            <p class="b">lorem</p></section></section></section>
+      <a href="" class="b">link</a>
+    </div>
+
+
+    <p>Paragraph 4. Not in a div.</p>
+    <p>Paragraph 5. Not in a div.</p>
+    <p>Paragraph 6. Not in a div.</p>
+    <p>Paragraph 6. Not in a div.</p>
+    <p>Paragraph 6. Not in a div.</p>
+    <p>Paragraph 6. Not in a div.</p>
+
+
+    <div class="link"><a href="http://">text</a></div>
+
+    <!-- Descendant Selector div p{} end -->
+
+    <!-- Child Selector div > p -->
+    <!-- <div>
+      <p>Paragraph 1 in the div.</p>
+      <p>Paragraph 2 in the div.</p>
+      <section><p>Paragraph 3 in the div</p></section>
+      <p>Paragraph 4 in the div.</p>
+    </div> -->
+    <!-- Child Selector div > p end -->
+
+    <!-- Adjacent Sibling Selector div + p -->
+    <!-- <div>
+      <p>Paragraph 1 in the div.</p>
+      <p>Paragraph 2 in the div.</p>
+    </div>
+    <p>Paragraph 3. After a div.</p>
+    <p>Paragraph 4. After a div.</p>
+    <p>lorem</p> -->
+
+    <!-- Adjacent Sibling Selector end -->
+
+    <!-- General Sibling Selector div ~ p -->
+    <!-- <div>
+        <p>Paragraph 2.</p>
+      </div>
+      <p>Paragraph 3.</p>
+      <code>Some code.</code>
+      <p>Paragraph 4.</p>  -->
+    <!-- General Sibling Selector end -->
+
+
+  </body>
+</html>
